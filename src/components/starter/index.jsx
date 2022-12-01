@@ -1,11 +1,13 @@
 import { useState } from "react";
-import "./App.css";
+import "./style.scss";
+import logo from "../../assets/2.png";
 
-function App() {
+const Starter = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
+    <div>
+      <img src={logo} alt="logo" />
       <h1>C'est ici que tout commence</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
@@ -17,6 +19,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
-export default App;
+export default Starter;
